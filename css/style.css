@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* RESET */
+}
+
+header {
+  padding: 16px 0;/* ESPAÇAMENTO */
+  background-color: rgb(49, 49, 212);
+  color: aliceblue;
+}
+
+header nav li {
+  display: inline;/* ALINHAMENTO */
+  margin-left: 16px;
+  font-size: 18px;
+}
+header nav li a {
+  color: aliceblue;
+  text-decoration: none;
+}
+header .container,
+section .container { /* APROVEITANDO O ALINHAMENTO PARA OS 2 */
+  display: flex;
+  align-items: center;/* ALINHA MENU */
+  justify-content: space-between; /* A DIREITA */
+}
+
+header H1,
+section h2,
+section h3,
+form button {
+  font-family: 'Bungee', cursive; /* FONTO DO GOOGLE FONTS */
+  font-weight: normal; /* PARA REMOVER O NEGRITO */
+}
+
+body,
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1280px;/* PARA CENRALIZAR */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.marcas img {
+  height: 24px;
+  margin-right: 8px;
+}
+.marcas li {
+  display: inline;
+}
+
+section .container {
+  align-items: flex-start;
+}
+section {
+  padding: 24PX 0;
+  color: rgb(49, 49, 212);
+}
+section h2 {
+  margin-bottom: 16px;
+}
+section p {
+  margin-bottom: 8px;
+}
+.img-loja {
+  margin-right: 32px;
+}
+
+#contato .container {
+  display: block; /* PARA DEIXAR COMO BLOCOS */
+}
+.metodos-contato {
+  display: flex; /* PARA ORGANIZAR A DIV CONTATO */
+  justify-content: space-between;/* ESPAÇAMENTO IGUAIS */
+}
+
+form input,
+textarea,
+button {
+  display: block;
+  width: 320px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+form textarea {
+  resize: none; /* PARA REMOVER ALTERAÇÃO DO TAMANHO */
+  height: 180px;
+}
+
+.social-links img {
+  height: 24px;
+}
+.social-links li {
+  display: inline;
+  margin-right: 10px;
+}
+.social-links li a {
+  text-decoration: none; /* PARA TIRAR SUJEIRA DO a */
+}
+
+section h3 {
+  margin-bottom: 16px;
+}
+
+form button {
+  background-color: rgb(49, 49, 212);
+  color: white;
+  border: none;
+  cursor: pointer; /* PARA ADD A MÃOZINHA */
+}
+form button:hover {
+  background-color: rgb(102, 102, 224);
+}
+
+input:focus, textarea:focus { /* PARA ALTARAR O CAMPO input */
+  outline-color:  rgb(49, 49, 212);
+}
+
+footer {
+  background-color: rgb(49, 49, 212);
+  color: aliceblue;
+  padding: 16px 0;
+}
